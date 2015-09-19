@@ -1,0 +1,8 @@
+{{#if isEditing}}
+	{{input value=property.name}} <button {{action 'update'}}>Update</button>
+{{else}}
+	<div>
+		<span {{action 'edit'}}>Property = {{property.name}}</span>
+		<button {{action 'delete'}}>Delete</button>
+	</div>
+{{/if}}
